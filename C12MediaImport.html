@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C12MediaImport</title>
+    <style>
+        /* 
+        @import
+        - <link> 태그를 대체할 수 있다.
+        - style 태그 안에서 사용해야 하고 반드시 최상단에 선언해야 한다.
+        - CSS파일에 오류가 있는 경우 다운로드 하지 않는다.
+        */
+        @import url(./style/import.css);
+        .content{
+            background-color: black; color: red;
+        }
+        /* 
+        @media
+        - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을 구성할 수
+        있도록 해준다. 
+        - 스크린(모니터)용과 프린터(출력물)용으로 구분할 수 있다.
+        */
+        @media screen {
+            /* 모니터에서는 검은배경에 흰색글씨로 표현 */
+            .content{
+                background-color: black; color: white;
+            }
+        }
+
+        @media print{
+            /* 프린트할때는 빨간바탕에 노란글씨로 표현 */
+            .content{
+                background-color: red ; color: yellow;
+            }
+        }
+        /* 
+        모든 웹브라우저는 배경색 출력을 허용하지 않는것이 디폴트 설정이므로
+        고급설정에서 '배경색 인쇄'를 체크해야 확인할 수 있다.
+        */
+    </style>
+</head>
+<body>
+    <h2>@media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>대구도시철도 4호선 '모노레일' 논란에도 'AGT' 고수</h3>
+            경전철 자동안내주행차량(AGT) 방식으로 건설 예정인 대구도시철도 4호선을 둘러싸고 
+            논란이 계속되고 있다. 일부 국회의원과 시민단체는 4호선에 '모노레일' 방식을 요구하고 있으나
+             대구시가 "당초 모노레일 방식을 추진했으나 법적·기술적·계약 구조상 문제로 어렵게 됐다"며
+              AGT 건설방식을 고수하고 있는 것이다.
+        </p>
+
+    </div>
+ 
+</body>
+</html>
