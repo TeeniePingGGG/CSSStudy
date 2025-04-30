@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C24Overflow</title>
+</head>
+<body>
+    <style>
+        /*
+        overflow: 크기가 제한된 영역에서 많은 양의 컨텐츠가 필요한 경유
+            보임 상태를 설정할 수 있다.
+            visible: 디폴트값. 별도의 제한없이 모든 컨텐츠를 표시한다
+            hidden: 영역을 초과하는 컨텐츠는 화면에 표시하지 않는다.
+            scroll: 스크롤바를 생성한다
+            auto: 스크롤바가 필요한 경우에만 자동으로 생성한다.
+        */
+        div.mybox{
+            background-color: coral;
+            width: 500px;
+            height: 100px;
+            border: 1px solid;
+            overflow: auto;
+        }
+    </style>
+    <h2>Overflow 속성</h2>
+    <div class="mybox">
+        <p>
+            서울남부지검 가상자산범죄합수단(단장 박건욱)은 30일 오전 서울 서초동 아크로비스타에 검사와 수사관을 
+            보내 윤 전 대통령 부부의 의혹 관련 자료를 확보하고 있다.
+        </p>
+        <p>
+    검찰은 윤 전 대통령 부부와 무속인 건진법사 전성배(65)씨 사이의 각종 의혹을 수사하고 있다. 검찰은 특히 전씨의 청탁금지법 위반 혐의와 관련해 
+    윤 전 대통령 부부의 사저를 압수수색하고 있다고 밝혔다. 
+    검찰은 전씨가 "김건희 여사 선물"이라며 통일교(세계평화통일가정연합) 2인자였던 윤모씨로부터 
+    받은 것으로 의심되는 명품 목걸이 등이 실제로 김 여사에게 전달됐는지 수사 중이다.
+        </p>
+    </div>
+</body>
+</html>
